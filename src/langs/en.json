@@ -1,4 +1,17 @@
 {
     "GOOD_MORNING": "Good morning",
-    "GOOD_EVENING": "Good evening"
+    "GOOD_EVENING": "Good evening",
+    "LOGOUT": "Logout",
+    "PROFILE": "Profile",
+    "ARABIC": "Arabic",
+    "ENGLISH": "English",
+    "DASHBOARD": "Dashboard",
+    "SLIDERS": "Sliders",
+    "SECTIONS": "Sections",
+    "USERS": "Users",
+    "GOALS": "Goals",
+    "FAQS": "Faqs",
+    "MESSAGES": "Messages",
+    "PRIVACY_POLICIES": "Privacy polices",
+    "PUBLISHING_HOUSES": "Publishing houses"
 }

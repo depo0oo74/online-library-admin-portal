@@ -1,4 +1,17 @@
 {
     "GOOD_MORNING": "صباح الخير",
-    "GOOD_EVENING": "مساء الخير"
+    "GOOD_EVENING": "مساء الخير",
+    "LOGOUT": "الخروج",
+    "PROFILE": "الصفحة الشخصية",
+    "ARABIC": "عربي",
+    "ENGLISH": "انجليزي",
+    "DASHBOARD": "الصفحة الرئيسية",
+    "SLIDERS": "سلايدرز",
+    "SECTIONS": "الاقسام",
+    "USERS": "المستخدمين",
+    "GOALS": "الاهداف",
+    "FAQS": "الاسئلة الشائعة المتكررة",
+    "MESSAGES": "الرسائل",
+    "PRIVACY_POLICIES": "سياسات الخصوصية",
+    "PUBLISHING_HOUSES": "دور النشر"
 }

@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
 import { BsFillBellFill } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 
 function Notification() {
+  // ** hooks
+  const { t } = useTranslation();
+
   // ** states
   const [dropdownOpen, setDropdownOpen] = useState(false);
 

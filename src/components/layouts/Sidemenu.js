@@ -27,9 +27,35 @@ function Sidemenue() {
   }, []);
   return (
     <div className="sidemenu">
-      <p className="welcome-msg">{time === "AM" ? t("GOOD_MORNING") : t("GOOD_EVENING")}</p>
+      <h6>{time === "AM" ? t("GOOD_MORNING") : t("GOOD_EVENING")}, Ahmed !!</h6>
       <ul>
-        <li></li>
+        <li>
+          <BsFillHouseDoorFill /> <span>{t("DASHBOARD")}</span>
+        </li>
+        <li>
+          <BsSliders /> <span>{t("SLIDERS")}</span>
+        </li>
+        <li>
+          <BsGrid3X3GapFill /> <span>{t("SECTIONS")}</span>
+        </li>
+        <li>
+          <BsFillPeopleFill /> <span>{t("USERS")}</span>
+        </li>
+        <li>
+          <BsRocketTakeoffFill /> <span>{t("GOALS")}</span>
+        </li>
+        <li>
+          <BsFillQuestionCircleFill /> <span>{t("FAQS")}</span>
+        </li>
+        <li>
+          <BsFillEnvelopeFill /> <span>{t("MESSAGES")}</span>
+        </li>
+        <li>
+          <BsFillFileTextFill /> <span>{t("PRIVACY_POLICIES")}</span>
+        </li>
+        <li>
+          <BsFillPencilFill /> <span>{t("PUBLISHING_HOUSES")}</span>
+        </li>
       </ul>
     </div>
   );

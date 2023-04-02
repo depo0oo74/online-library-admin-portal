@@ -25,10 +25,7 @@ body {
     font-family: regular_font;
     overflow-x: hidden;
 }
-svg {
-    color: var(--blueColor);
-    font-size: 30px;
-}
+
 /* =================== dropdown ================== */
 div.dropdown button {
     background: none !important;
@@ -69,10 +66,26 @@ nav.navbar .nav-content div.avatar img {
     border-radius: 50%;
     border: 2px solid var(--blueColor);
 }
+nav.navbar svg {
+    color: var(--blueColor);
+    font-size: 30px;
+} 
 /*=================== Sidemenu =====================*/
 div.sidemenu {
     background: var(--blueColor);
     height: 100%;
     position: fixed;
     width: 250px;
+    color: #ffffff;
+}
+div.sidemenu h6 {
+    font-family: bold_font;
+    padding: 0 20px !important;
+    margin-top: 40px !important;
+    font-size: 24px;
+}
+div.sidemenu ul li {
+    padding: 0 20px !important;
+    margin: 20px 0 !important;
+    font-size: 18px;
 }
