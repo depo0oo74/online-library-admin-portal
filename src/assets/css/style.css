@@ -69,3 +69,10 @@ nav.navbar .nav-content div.avatar img {
     border-radius: 50%;
     border: 2px solid var(--blueColor);
 }
+/*=================== Sidemenu =====================*/
+div.sidemenu {
+    background: var(--blueColor);
+    height: 100%;
+    position: fixed;
+    width: 250px;
+}

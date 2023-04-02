@@ -12,7 +12,7 @@ function Avatar() {
   const toggle = () => setDropdownOpen((prevState) => !prevState);
   return (
     <div className="avatar">
-      <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+      <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={"up"}>
         <DropdownToggle>
           <img src={avatarPic} alt="avatarPicture" />
         </DropdownToggle>

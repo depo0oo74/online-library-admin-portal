@@ -11,7 +11,7 @@ function Language() {
 
   return (
     <div className="lang">
-      <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+      <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={"up"}>
         <DropdownToggle>
           <BsGlobe />
         </DropdownToggle>

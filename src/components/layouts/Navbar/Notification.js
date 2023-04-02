@@ -11,7 +11,7 @@ function Notification() {
 
   return (
     <div className="notification">
-      <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+      <Dropdown isOpen={dropdownOpen} toggle={toggle} direction={"up"}>
         <DropdownToggle>
           <BsFillBellFill />
         </DropdownToggle>
