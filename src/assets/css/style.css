@@ -25,14 +25,47 @@ body {
     font-family: regular_font;
     overflow-x: hidden;
 }
-
+svg {
+    color: var(--blueColor);
+    font-size: 30px;
+}
+/* =================== dropdown ================== */
+div.dropdown button {
+    background: none !important;
+    border: none !important;
+}
+div.dropdown-menu button {
+    padding: 5px !important;
+    transition: all .3s ease;
+}
+div.dropdown-menu button:hover {
+    background: var(--orangeColor) !important;
+    color: #ffffff;
+}
 /*=================== navbar =====================*/
 nav.navbar {
     background: #ffffff;
+    padding: 0 100px !important;
 }
-nav.navbar a img {
+nav.navbar .brand a img {
     width: 100px;
     height: 100px;
     object-fit: fill;
-   
+}
+nav.navbar .nav-content {
+    display: flex;
+    align-items: center;
+}
+nav.navbar .nav-content div.avatar,
+nav.navbar .nav-content div.theme,
+nav.navbar .nav-content div.notification,
+nav.navbar .nav-content div.language {
+    margin-left: 20px !important;
+}
+nav.navbar .nav-content div.avatar img {
+    height: 60px;
+    width: 60px;
+    object-fit: fill;
+    border-radius: 50%;
+    border: 2px solid var(--blueColor);
 }
