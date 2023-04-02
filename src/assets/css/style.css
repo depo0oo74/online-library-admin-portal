@@ -1,0 +1,38 @@
+/*=================== Main colors ==========================*/
+:root {
+    --orangeColor: #E67816;
+    --blueColor: #014E94;
+}
+
+/*====================== Fonts ============================*/
+@font-face {
+    font-family: regular_font;
+    src: url(../fonts/Tajawal-Regular.ttf);
+}
+
+@font-face {
+    font-family: bold_font;
+    src: url(../fonts//Tajawal-Bold.ttf);
+}
+
+/*=================== global styles =====================*/
+* {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+body {
+    background: #F7F7F7;
+    font-family: regular_font;
+    overflow-x: hidden;
+}
+
+/*=================== navbar =====================*/
+nav.navbar {
+    background: #ffffff;
+}
+nav.navbar a img {
+    width: 100px;
+    height: 100px;
+    object-fit: fill;
+   
+}
