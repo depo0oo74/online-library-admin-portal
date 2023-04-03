@@ -18,7 +18,7 @@ function Sidemenue() {
   const { t } = useTranslation();
 
   // ** states
-  const [time, setTime] = useState(null);
+  const [time, setTime] = useState(moment().format("LT").split(" ")[1]);
 
   useEffect(() => {
     setInterval(() => {
@@ -27,34 +27,52 @@ function Sidemenue() {
   }, []);
   return (
     <div className="sidemenu">
-      <h6>{time === "AM" ? t("GOOD_MORNING") : t("GOOD_EVENING")}, Ahmed !!</h6>
+      <h6>{time === "AM" ? t("GOOD_MORNING") : t("GOOD_EVENING")} .. Ahmed !!</h6>
       <ul>
         <li>
-          <BsFillHouseDoorFill /> <span>{t("DASHBOARD")}</span>
+          <a className="btn active" href="/">
+            <BsFillHouseDoorFill /> <span>{t("DASHBOARD")}</span>
+          </a>
         </li>
         <li>
-          <BsSliders /> <span>{t("SLIDERS")}</span>
+          <a className="btn" href="/">
+            <BsSliders /> <span>{t("SLIDERS")}</span>
+          </a>
         </li>
         <li>
-          <BsGrid3X3GapFill /> <span>{t("SECTIONS")}</span>
+          <a className="btn" href="/">
+            <BsGrid3X3GapFill /> <span>{t("SECTIONS")}</span>
+          </a>
         </li>
         <li>
-          <BsFillPeopleFill /> <span>{t("USERS")}</span>
+          <a className="btn" href="/">
+            <BsFillPeopleFill /> <span>{t("USERS")}</span>
+          </a>
         </li>
         <li>
-          <BsRocketTakeoffFill /> <span>{t("GOALS")}</span>
+          <a className="btn" href="/">
+            <BsRocketTakeoffFill /> <span>{t("GOALS")}</span>
+          </a>
         </li>
         <li>
-          <BsFillQuestionCircleFill /> <span>{t("FAQS")}</span>
+          <a className="btn" href="/">
+            <BsFillQuestionCircleFill /> <span>{t("FAQS")}</span>
+          </a>
         </li>
         <li>
-          <BsFillEnvelopeFill /> <span>{t("MESSAGES")}</span>
+          <a className="btn" href="/">
+            <BsFillEnvelopeFill /> <span>{t("MESSAGES")}</span>
+          </a>
         </li>
         <li>
-          <BsFillFileTextFill /> <span>{t("PRIVACY_POLICIES")}</span>
+          <a className="btn" href="/">
+            <BsFillFileTextFill /> <span>{t("PRIVACY_POLICIES")}</span>
+          </a>
         </li>
         <li>
-          <BsFillPencilFill /> <span>{t("PUBLISHING_HOUSES")}</span>
+          <a className="btn" href="/">
+            <BsFillPencilFill /> <span>{t("PUBLISHING_HOUSES")}</span>
+          </a>
         </li>
       </ul>
     </div>
