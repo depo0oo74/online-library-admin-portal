@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment/moment";
+import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   BsFillHouseDoorFill,
@@ -30,49 +31,49 @@ function Sidemenue() {
       <h6>{time === "AM" ? t("GOOD_MORNING") : t("GOOD_EVENING")} .. Ahmed !!</h6>
       <ul>
         <li>
-          <a className="btn active" href="/">
+          <NavLink className="btn" to={"/" || "dashboard"}>
             <BsFillHouseDoorFill /> <span>{t("DASHBOARD")}</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="btn" href="/">
+          <NavLink className="btn" to="/sliders">
             <BsSliders /> <span>{t("SLIDERS")}</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="btn" href="/">
+          <NavLink className="btn" to="/sections">
             <BsGrid3X3GapFill /> <span>{t("SECTIONS")}</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="btn" href="/">
+          <NavLink className="btn" to="/users">
             <BsFillPeopleFill /> <span>{t("USERS")}</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="btn" href="/">
+          <NavLink className="btn" to="/goals">
             <BsRocketTakeoffFill /> <span>{t("GOALS")}</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="btn" href="/">
+          <NavLink className="btn" to="/faqs">
             <BsFillQuestionCircleFill /> <span>{t("FAQS")}</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="btn" href="/">
+          <NavLink className="btn" to="/messages">
             <BsFillEnvelopeFill /> <span>{t("MESSAGES")}</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="btn" href="/">
+          <NavLink className="btn" to="/policies">
             <BsFillFileTextFill /> <span>{t("PRIVACY_POLICIES")}</span>
-          </a>
+          </NavLink>
         </li>
         <li>
-          <a className="btn" href="/">
+          <NavLink className="btn" to="/publishing-houses">
             <BsFillPencilFill /> <span>{t("PUBLISHING_HOUSES")}</span>
-          </a>
+          </NavLink>
         </li>
       </ul>
     </div>

@@ -25,6 +25,9 @@ body {
     font-family: regular_font;
     overflow-x: hidden;
 }
+div.content {
+    margin: 50px 0 0 280px !important;
+}
 /* =================== dropdown ================== */
 div.dropdown button {
     background: none !important;

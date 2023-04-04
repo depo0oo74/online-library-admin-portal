@@ -1,11 +1,9 @@
-import Navbar from "./components/layouts/Navbar/index";
-import Sidemenu from "./components/layouts/Sidemenu";
+import Router from "./routes/router";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Sidemenu />
+      <Router />
     </div>
   );
 }
