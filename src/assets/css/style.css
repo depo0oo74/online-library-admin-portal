@@ -25,7 +25,6 @@ body {
     font-family: regular_font;
     overflow-x: hidden;
 }
-
 /* =================== dropdown ================== */
 div.dropdown button {
     background: none !important;
@@ -114,4 +113,20 @@ div.sidemenu ul li a.active::after {
 }
 div.sidemenu ul li a:hover::after {
     width: 100%;
+}
+div.sidemenu::-webkit-scrollbar {
+    width: 5px;
+}
+div.sidemenu::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+div.sidemenu::-webkit-scrollbar-thumb {
+    background: var(--orangeColor);
+    border-radius: 10px;
+}
+
+div.sidemenu::-webkit-scrollbar-thumb:hover {
+    background: var(--orangeColor);
 }
